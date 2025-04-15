@@ -1,0 +1,50 @@
+/* Navbar Container */
+.navbar {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 1rem; /* Padding around the navbar */
+  }
+  
+  /* Brand Name or Logo */
+  .navbar-brand {
+    font-size: 1.5rem; /* Larger font size for the brand name */
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar-brand:hover {
+    color: #007bff; /* Blue hover effect */
+  }
+  
+  /* Navigation Links Container */
+  .navbar-links {
+    display: flex; /* Flexbox for horizontal alignment */
+  }
+  
+  /* Individual Links */
+  .navbar-link {
+    margin-right: 1rem; /* Space between links */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Standard font size for links */
+  }
+  
+  .navbar-link:hover {
+    color: #007bff; /* Blue hover effect */
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-link {
+      margin-right: 0; /* Remove horizontal spacing */
+      margin-bottom: 0.5rem; /* Add vertical spacing between links */
+    }
+  }
+  

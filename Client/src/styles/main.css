@@ -1,0 +1,66 @@
+/* Import Tailwind CSS base styles */
+@tailwind base;
+
+/* Import Tailwind CSS component styles */
+@tailwind components;
+
+/* Import Tailwind CSS utility styles */
+@tailwind utilities;
+
+/* Custom Global Styles */
+body {
+  font-family: 'Inter', sans-serif; /* Use a clean, modern font */
+  background-color: #f8f9fa; /* Light background color for the app */
+  color: #333; /* Default text color */
+}
+
+/* Chat Message Styling */
+.user-message {
+  background-color: #007bff; /* Blue for user messages */
+  color: white;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #e9ecef; /* Gray for bot messages */
+  color: black;
+  text-align: left;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #343a40; /* Dark navbar background */
+  color: white;
+}
+.navbar-link {
+    margin-right: 10px;
+  }
+  
+  .navbar-link:hover {
+    color: #007bff; /* Blue on hover */
+  }
+
+/* Form Inputs */
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Loading Spinner */
+.spinner {
+  border-top-color: #007bff; /* Blue spinner */
+}

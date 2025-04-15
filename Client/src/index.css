@@ -1,0 +1,48 @@
+/* Import main.css for global styles */
+@import './styles/main.css';
+
+/* Additional Overrides or Custom Styles */
+
+/* Adjust spacing for the root div */
+#root {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add smooth transitions to buttons and links */
+button,
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile devices */
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on smaller screens */
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
